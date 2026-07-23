@@ -1,0 +1,104 @@
+name: Bot Issue
+description: Report a bug, request a feature, or suggest an improvement for one of our Discord bots
+title: ""
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for creating an issue!
+
+        Please provide a short and descriptive title and complete all relevant fields below.
+
+  - type: dropdown
+    id: bot
+    attributes:
+      label: Affected Bot
+      description: Which bot is this issue related to?
+      options:
+        - Drok
+        - Delezatro Bing
+        - Delezatro Converter
+        - Delezatro Copulator
+        - Delezatro Spinner
+        - Delezatro Translator
+        - Delezatro Weather
+        - Beer Drok
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type
+      description: What kind of issue are you reporting?
+      options:
+        - Bug
+        - Feature / Improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Describe the issue or requested functionality as clearly as possible.
+      placeholder: |
+        For bugs:
+        What happened, and what were you doing when it occurred?
+
+        For features or improvements:
+        What should the bot be able to do, or what should be improved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: |
+        For bugs only. Describe the steps needed to reproduce the issue.
+      placeholder: |
+        1. Run the command ...
+        2. Select ...
+        3. The bot responds with ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected Behavior
+      description: |
+        For bugs only. What did you expect to happen instead?
+      placeholder: The bot should ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: feature_goal
+    attributes:
+      label: Feature or Improvement Goal
+      description: |
+        For features and improvements only. What problem would this solve,
+        and how should the functionality ideally work?
+      placeholder: |
+        This change would be useful because ...
+
+        A possible workflow could be:
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional Context
+      description: |
+        Add error messages, screenshots, Discord messages, links,
+        or any other relevant information. You can drag and drop files into this field.
+      placeholder: Add any additional information here ...
+    validations:
+      required: false
