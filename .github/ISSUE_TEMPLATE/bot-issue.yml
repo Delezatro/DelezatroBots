@@ -1,6 +1,6 @@
 name: Bot Issue
 description: Report a bug, request a feature, or suggest an improvement for one of our Discord bots
-title: ""
+
 body:
   - type: markdown
     attributes:
