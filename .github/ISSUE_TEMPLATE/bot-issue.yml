@@ -74,31 +74,3 @@ body:
       placeholder: The bot should ...
     validations:
       required: false
-
-  - type: textarea
-    id: feature_goal
-    attributes:
-      label: Feature or Improvement Goal
-      description: |
-        For features and improvements only. What problem would this solve,
-        and how should the functionality ideally work?
-      placeholder: |
-        This change would be useful because ...
-
-        A possible workflow could be:
-        1. ...
-        2. ...
-        3. ...
-    validations:
-      required: false
-
-  - type: textarea
-    id: additional_context
-    attributes:
-      label: Additional Context
-      description: |
-        Add error messages, screenshots, Discord messages, links,
-        or any other relevant information. You can drag and drop files into this field.
-      placeholder: Add any additional information here ...
-    validations:
-      required: false
